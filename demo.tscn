@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcvwxjpm5i14i"]
+
+[ext_resource type="Script" path="res://demo.gd" id="1_u3e1n"]
+[ext_resource type="PackedScene" uid="uid://ba5hscuebor6b" path="res://example_bar.tscn" id="2_4tm5e"]
+
+[node name="Demo" type="CanvasLayer"]
+script = ExtResource("1_u3e1n")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 1, 0.513726, 1)
+
+[node name="ExampleBar" parent="." instance=ExtResource("2_4tm5e")]
+offset_left = 171.0
+offset_top = 115.0
+offset_right = 221.0
+offset_bottom = 127.0
+
+[node name="ExampleBar2" parent="." instance=ExtResource("2_4tm5e")]
+offset_left = 417.0
+offset_top = 115.0
+offset_right = 467.0
+offset_bottom = 127.0
+
+[node name="ExampleBar3" parent="." instance=ExtResource("2_4tm5e")]
+offset_left = 864.0
+offset_top = 122.0
+offset_right = 914.0
+offset_bottom = 134.0
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 129.0
+offset_top = 201.0
+offset_right = 1028.0
+offset_bottom = 268.0
+
+[node name="ExampleBar" parent="Panel" instance=ExtResource("2_4tm5e")]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 30.0
+offset_right = 143.0
+offset_bottom = 42.0
+
+[node name="ExampleBar2" parent="Panel" instance=ExtResource("2_4tm5e")]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 31.0
+offset_right = 269.0
+offset_bottom = 43.0
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 2.0
+offset_top = 295.0
+offset_right = 1154.0
+offset_bottom = 371.0
